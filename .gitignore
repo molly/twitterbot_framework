@@ -58,3 +58,5 @@ target/
 
 # Custom
 .idea/
+.DS_Store
+secrets.py
