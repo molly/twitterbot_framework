@@ -49,7 +49,7 @@ def tweet(text):
     try:
         api.update_status(text)
     except tweepy.error.TweepError as e:
-        log(e.message)
+        log(str(e))
     else:
         log("Tweeted: " + text)
 
