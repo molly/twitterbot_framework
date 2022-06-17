@@ -56,6 +56,7 @@ def tweet(text):
 
 def log(message):
     """Log message to logfile."""
+    print('log: {}'.format(message))
     path = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
     with open(os.path.join(path, logfile_name), 'a+') as f:
         t = strftime("%d %b %Y %H:%M:%S", gmtime())
